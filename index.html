@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <title>Iñaki Zarate</title>
+  </head>
+  <body>
+
+    <header id="nav" class="header">
+      <div class="header__container">
+        <a href="" class="header__logo"><img src="img/marca_2.svg" alt=""></a>
+        <div class="header__menu menu">
+          <div class="menu__icon">
+            <span></span>
+          </div>
+          <nav data-sub_menu_auto_close="true" class="menu__body">
+            <ul class="menu__list">
+              <li>
+                <a data-goto="#inicio" href="" class="menu__link"
+                  >INICIO</a
+                >
+              </li>
+              <li>
+                <a data-goto="#hab" href="" class="menu__link"
+                  >HABILIDADES</a
+                >
+              </li>
+              <li>
+                <a data-goto="#acerca" href="" class="menu__link"
+                  >ACERCA DE MI</a
+                >
+              </li>
+              <li>
+                <a data-goto="#estudios" href="" class="menu__link"
+                  >ESTUDIOS</a
+                >
+              </li>
+              <li>
+                <a data-goto="#contacto" href="" class="menu__link"
+                  >CONTACTO</a
+                >
+              </li>
+              <li>
+                <a data-goto="#servicios" class="menu__link px-3 py-2 bg-blue-400 rounded-md cursor-pointer"
+                  >SERVICIOS</a
+                >
+              </li>
+            
+            </ul>
+          </nav>
+        </div>
+      </div>
+     
+    </header>
+   
+
+
+    
+     
+
+    <section class="inicio" id="inicio">
+    </section>
+
+    <div class="w-screen h-52 bg-[aliceblue] flex justify-center items-center">
+      <button class="py-3 px-4 bg-blue-700 rounded-md text-2xl text-gray-100"><a class="bi bi-file-earmark-arrow-down"  download="CV-IÑAKI-ZARATE" href="Cv-zarate.pdf">Descargar CV</a>
+      </button>
+    </div>
+
+
+    <section class="flex flex-col w-screen h-auto items-center justify-around py-6 bg-gray-950" id="hab">
+      <h3 class="text-3xl text-gray-100">HABILIDADES</h3>
+      <div class="grid grid-cols-2 grid-rows-4 gap-10 md:gap-x-32 md:grid-cols-4 md:grid-rows-2 py-10">
+        <img class="w-[100px]" src="img/html-5.png" alt="html">
+        <img class="w-[100px]" src="img/css-3.png" alt="css">
+        <img class="w-[100px]" src="img/js.png" alt="javascript">
+        <img class="w-[100px]" src="img/bootstrap.png" alt="bootstrap">
+        <img class="w-[100px]" src="img/1631110818-logo-react-js.png" alt="react.js">
+        <img class="w-[100px]" src="img/git.png" alt="git">
+        <img class="w-[100px]" src="img/github-alt.svg" alt="github">
+        <img class="w-[100px]" src="img/sass.png" alt="sass">
+      </div>
+    </section>
+
+    <section class="acerca h-screen md:h-auto md:py-10  flex flex-col w-full justify-around gap-6 container" id="acerca">
+
+        <h3 class="text-3xl text-gray-800 w-full text-center font-bold">ACERCA DE MI</h3>
+        <div class="container ace px-7 flex flex-col justify-center  gap-6 items-center  text-center font-semibold text-gray-700 px-8 py-10">
+            <p class="text-xl text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo iste reiciendis alias aspernatur quisquam ullam tenetur ducimus, odio ipsam! Quia sapiente fugiat neque repellendus rerum fuga suscipit facilis! Possimus, deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iusto illo, nobis sapiente quidem commodi, voluptatibus officiis libero iure eius doloremque accusantium autem harum perspiciatis, sed voluptatem nostrum asperiores ullam!</p>
+            <p class="text-xl text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo iste reiciendis alias aspernatur quisquam ullam tenetur ducimus, odio ipsam! Quia sapiente fugiat neque repellendus rerum fuga suscipit facilis! Possimus, deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quis odit distinctio, libero eum porro. Quidem alias earum a exercitationem nobis ipsum voluptate, eos iure animi incidunt praesentium ullam sit.</p>
+
+      </div>
+       
+    </section>
+    <section id="servicios" class="h-auto w-full py-10 bg-[aliceblue]">
+      <h3 class="w-full text-center text-4xl text-gray-800">SERVICIOS</h3>
+      <div class="bg-[aliceblue] py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+         
+          <!-- landing page -->
+          <div class="mx-auto mt-16 max-w-2xl border-4 rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+            <div class="p-8 sm:p-10 lg:flex-auto">
+              <h3 class="text-4xl font-bold tracking-tight text-gray-900">LANDING PAGE</h3>
+              
+              <div class="mt-10 flex items-center gap-x-4">
+                <h4 class="flex-none font-semibold leading-7 text-indigo-600 text-xl">Que incluye?</h4>
+                <div class="h-px flex-auto bg-gray-100"></div>
+              </div>
+              <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                  1 SECCIÓN
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                  HOSTING Y DOMINIO POR 1 AÑO
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                  DISEÑO PERSONALIZADO
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                 POSICIONAMIENTO SEO
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                 ENTREGA EN 10 DIAS 
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                 SOPORTE TÉCNICO
+                </li>
+              </ul>
+            </div>
+            <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+              <div class="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+                <div class="mx-auto max-w-xs px-8">
+                  <p class="text-base font-semibold text-gray-600">Pago en 2 plazos</p>
+                  <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                    <span class="text-5xl font-bold tracking-tight text-gray-900">$44.000</span>
+                  </p>
+                  <p class="text-sm py-4 text-gray-800 font-semibold">O $95 UDS</p>
+                  <a href="#" class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Lo quiero</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- sitio web estandar  -->
+          <div class="mx-auto mt-16 max-w-2xl border-4 rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+            <div class="p-8 sm:p-10 lg:flex-auto">
+              <h3 class="text-4xl font-bold tracking-tight text-gray-900">SITIO WEB ESTANDAR</h3>
+              
+              <div class="mt-10 flex items-center gap-x-4">
+                <h4 class="flex-none font-semibold leading-7 text-indigo-600 text-xl">Que incluye?</h4>
+                <div class="h-px flex-auto bg-gray-100"></div>
+              </div>
+              <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                  HASTA 3 SECCIONES + CONTACTO
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                  HOSTING Y DOMINIO POR 1 AÑO
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                  DISEÑO PERSONALIZADO
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                 POSICIONAMIENTO SEO
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                 ENTREGA EN 15 DIAS 
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                 SOPORTE TÉCNICO
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                 MANTENIMIENTO MENSUAL (opcional $3800)
+                </li>
+              </ul>
+            </div>
+            <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0 bg-[aliceblue]">
+              <div class="rounded-2xl bg-[aliceblue] py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+                <div class="mx-auto max-w-xs px-8 bg-[aliceblue]">
+                  <p class="text-base font-semibold text-gray-600">Pago en 2 plazos</p>
+                  <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                    <span class="text-5xl font-bold tracking-tight text-gray-900">$59.000</span>
+                  </p>
+                  <p class="text-sm py-4 text-gray-800 font-semibold">O $130 UDS</p>
+                  <a href="#" class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Lo quiero</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- sitio web premium -->
+          <div class="mx-auto mt-16 max-w-2xl border-4 rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+            <div class="p-8 sm:p-10 lg:flex-auto">
+              <h3 class="text-4xl font-bold tracking-tight text-gray-900">SITIO WEB PREMMIUM</h3>
+              
+              <div class="mt-10 flex items-center gap-x-4">
+                <h4 class="flex-none font-semibold leading-7 text-indigo-600 text-xl">Que incluye?</h4>
+                <div class="h-px flex-auto bg-gray-100"></div>
+              </div>
+              <ul role="list" class="mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                  HASTA 7 SECCIONES + CONTACTO
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                  HOSTING Y DOMINIO POR 1 AÑO
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                  DISEÑO PERSONALIZADO
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                 POSICIONAMIENTO SEO
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                 ENTREGA EN 20 DIAS 
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                 SOPORTE TÉCNICO
+                </li>
+                <li class="flex gap-x-3">
+                  <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                  </svg>
+                 MANTENIMIENTO MENSUAL (opcional $3800)
+                </li>
+              </ul>
+            </div>
+            <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0 bg-[aliceblue]">
+              <div class="rounded-2xl bg-[aliceblue] py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+                <div class="mx-auto max-w-xs px-8 bg-[aliceblue]">
+                  <p class="text-base font-semibold text-gray-600">Pago en 2 plazos</p>
+                  <p class="mt-6 flex items-baseline justify-center gap-x-2">
+                    <span class="text-5xl font-bold tracking-tight text-gray-900">$72.000</span>
+                  </p>
+                  <p class="text-sm py-4 text-gray-800 font-semibold">O $170 UDS</p>
+                  <a href="#" class="mt-10 block w-full rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Lo quiero</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="h-auto w-screen py-5 flex flex-col md:flex-row justify-around items-center" id="estudios">
+    
+      <div class="h-72 w-[310px] flex justify-center items-start flex-col">
+				<span class="text-4xl py-5 font-bold">Estudios Universitarios </span>
+		
+			<p class="text-xl font-semibold">Actualmente me encuentro cursando el primer año de la carrera de analisis de sistemas en la UBA.</p>
+		</div>
+
+
+    
+
+    <div class="h-auto w-[310px] flex justify-center items-start flex-col">
+	
+      <span class="text-4xl py-5 font-bold">Cursos</span>
+    
+    <p class="text-xl font-semibold py-3">Community Manager y publicidad - CoderHouse.</p>
+    <p class="text-xl font-semibold py-3">Desarrollo Web - CoderHouse.</p>
+    <p class="text-xl font-semibold py-3">JavaScript - CoderHouse.</p>
+    <p class="text-xl font-semibold py-3">React.js - CoderHouse.</p>
+  </div>
+    </section>
+    
+    <section class="bg-gray-200 h-64 w-screen flex justify-around items-center flex-col" id="contacto">
+      <h4 class="text-3xl font-bold text-gray-800">Contacto</h4>
+
+      <div class="w-full flex justify-center items-center gap-6">
+        <a href="https://www.instagram.com/zarateinaki/"><i class="text-3xl text-gray-900 hover:text-gray-700 bi bi-instagram"></i></a>
+        <a href="https://github.com/inakizarate25"><i class="text-3xl text-gray-900 hover:text-gray-700 bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/i%C3%B1aki-zarate-6a0a09212"><i class="text-3xl text-gray-900 hover:text-gray-700 bi bi-linkedin"></i></a>
+      </div>
+      <p class="mail" href="">inakizarate.dev@gmail.com</p>
+    </section>
+
+    <button
+    onclick="scrollToTop()"
+    id="scroll-top-button"
+    class="fixed right-[20px] bottom-[36px] grid place-items-center w-16 h-16 rounded-full bg-blue-400 text-gray-100 text-2xl cursor-pointer invisible opacity-0 duration-300"
+    type="button"
+  >
+    <span class="material-symbols-outlined"> arrow_upward </span>
+  </button>
+
+    <script src="js/app.js"></script>
+   
+  </body>
+</html>
