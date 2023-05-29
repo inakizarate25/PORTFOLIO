@@ -10,48 +10,10 @@ html {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-body {
-    height: 100%;
-    display: flex;
-    max-width: 1900px;
-    flex-direction: column;
-    align-items: center;
-   
-    background-color:#b2b79d ;
-   ;
+
 }
 
-.inicio {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items:flex-start;
-height: 80vh;
-width: 80%;
-gap: 60px;
-margin-top: 50px;
-background-image: url(../img/marca_3.svg);
-background-repeat: no-repeat;
-background-position: center
-}
 
-@media screen and (max-width:770px)
-{
-    .inicio {
-        background-image: url(../img/marca_4.svg);
-        height: 94vh;
-    }
-}
-h1{
-font-size: 80px;
-color: var(--prinsipal);
-width: 480px;
-max-width: 680px;
-text-align: center;
-font-weight: 600;
-}
 
 .ace{
   max-width: 1300px;
@@ -67,15 +29,7 @@ a {
 li {
     list-style: none;
 }
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    background-color: #b2b79d;
-  
-  }
+
   .header__container {
     padding: 0 30px;
     max-width: 1200px;
@@ -279,7 +233,7 @@ li {
 
 
 
-  /* .scroll-top-button {
+  .scroll-top-button {
     position: fixed;
     right: 20px;
     bottom: 36px;
@@ -296,7 +250,7 @@ li {
     visibility: hidden;
     transition: 0.3s;
   }
-  /*  */
+
   .scroll-top-button.visible {
     opacity: 1;
     visibility: visible;

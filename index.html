@@ -14,9 +14,9 @@
     
     <title>Iñaki Zarate</title>
   </head>
-  <body>
+  <body class="h-full w-screen flex max-w-[1900px] flex-col items-center bg-[#b2b79d]">
 
-    <header id="nav" class="header">
+    <header id="nav" class="header fixed top-0 left-0 w-[99vw] z-10 bg-[#b2b79d]">
       <div class="header__container">
         <a href="" class="header__logo"><img src="img/marca_2.svg" alt=""></a>
         <div class="header__menu menu">
@@ -68,16 +68,16 @@
     
      
 
-    <section class="inicio" id="inicio">
+    <section class="flex flex-col justify-start items-start h-[94vh] md:h-[80vh] w-[95%] gap-10 mt-5 bg-[url('./img/marca_4.svg')] md:bg-[url('./img/marca_3.svg')] bg-no-repeat bg-center mb-4" id="inicio">
     </section>
 
-    <div class="w-screen h-52 bg-[aliceblue] flex justify-center items-center">
+    <div class="w-full h-52 bg-[aliceblue] flex justify-center items-center">
       <button class="py-3 px-4 bg-blue-700 rounded-md text-2xl text-gray-100"><a class="bi bi-file-earmark-arrow-down"  download="CV-IÑAKI-ZARATE" href="Cv-zarate.pdf">Descargar CV</a>
       </button>
     </div>
 
 
-    <section class="flex flex-col w-screen h-auto items-center justify-around py-6 bg-gray-950" id="hab">
+    <section class="flex flex-col w-full h-auto items-center justify-around py-6 bg-gray-950" id="hab">
       <h3 class="text-3xl text-gray-100">HABILIDADES</h3>
       <div class="grid grid-cols-2 grid-rows-4 gap-10 md:gap-x-32 md:grid-cols-4 md:grid-rows-2 py-10">
         <img class="w-[100px]" src="img/html-5.png" alt="html">
@@ -91,12 +91,16 @@
       </div>
     </section>
 
-    <section class="acerca h-screen md:h-auto md:py-10  flex flex-col w-full justify-around gap-6 container" id="acerca">
+    <section class="acerca h-auto py-10  flex flex-col w-full justify-around gap-6 container" id="acerca">
 
-        <h3 class="text-3xl text-gray-800 w-full text-center font-bold">ACERCA DE MI</h3>
+        <h3 class="text-3xl text-gray-800 w-full  text-center font-bold">ACERCA DE MI</h3>
         <div class="container ace px-7 flex flex-col justify-center  gap-6 items-center  text-center font-semibold text-gray-700 px-8 py-10">
-            <p class="text-xl text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo iste reiciendis alias aspernatur quisquam ullam tenetur ducimus, odio ipsam! Quia sapiente fugiat neque repellendus rerum fuga suscipit facilis! Possimus, deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iusto illo, nobis sapiente quidem commodi, voluptatibus officiis libero iure eius doloremque accusantium autem harum perspiciatis, sed voluptatem nostrum asperiores ullam!</p>
-            <p class="text-xl text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo iste reiciendis alias aspernatur quisquam ullam tenetur ducimus, odio ipsam! Quia sapiente fugiat neque repellendus rerum fuga suscipit facilis! Possimus, deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quis odit distinctio, libero eum porro. Quidem alias earum a exercitationem nobis ipsum voluptate, eos iure animi incidunt praesentium ullam sit.</p>
+            <p class="text-md md:text-xl text-justify">¡Hola! Soy Iñaki Zárate, un apasionado desarrollador Front-end en búsqueda de mi primer trabajo en el campo de la tecnología. Con sólidos conocimientos en HTML, CSS y JavaScript, junto con experiencia en frameworks como React.js y el uso de bibliotecas como Tailwind CSS, estoy listo para contribuir en el desarrollo de soluciones web atractivas y funcionales.</p>
+            <p class="text-md md:text-xl text-justify">Mi objetivo es combinar mis habilidades técnicas con mi pasión por el diseño y la usabilidad para crear experiencias de usuario excepcionales. Con un enfoque centrado en la creación de interfaces responsivas e intuitivas, me esfuerzo por brindar soluciones innovadoras y adaptadas a las necesidades del usuario.</p>
+            <p class="text-md md:text-xl text-justify">Además de mis habilidades técnicas, poseo una mentalidad analítica y creativa que me permite abordar los desafíos de manera efectiva. Mi capacidad para trabajar en equipo, comunicarme de manera clara y aprender rápidamente me convierte en un colaborador valioso en cualquier proyecto.</p>
+            <p class="text-md md:text-xl text-justify">Estoy emocionado por formar parte de un equipo dinámico donde pueda seguir desarrollando mis habilidades y contribuir al éxito del proyecto. Si buscas un desarrollador Front-end entusiasta y comprometido, no dudes en ponerse en contacto conmigo.
+
+              ¡Estoy ansioso por asumir nuevos desafíos y crear experiencias web sorprendentes juntos!</p>
 
       </div>
        
@@ -312,7 +316,7 @@
     </section>
 
 
-    <section class="h-auto w-screen py-5 flex flex-col md:flex-row justify-around items-center" id="estudios">
+    <section class="h-auto w-full py-5 flex flex-col md:flex-row justify-around items-center" id="estudios">
     
       <div class="h-72 w-[310px] flex justify-center items-start flex-col">
 				<span class="text-4xl py-5 font-bold">Estudios Universitarios </span>
@@ -334,7 +338,7 @@
   </div>
     </section>
     
-    <section class="bg-gray-200 h-64 w-screen flex justify-around items-center flex-col" id="contacto">
+    <section class="bg-gray-200 h-64 w-full flex justify-around items-center flex-col" id="contacto">
       <h4 class="text-3xl font-bold text-gray-800">Contacto</h4>
 
       <div class="w-full flex justify-center items-center gap-6">
@@ -348,7 +352,7 @@
     <button
     onclick="scrollToTop()"
     id="scroll-top-button"
-    class="fixed right-[20px] bottom-[36px] grid place-items-center w-16 h-16 rounded-full bg-blue-400 text-gray-100 text-2xl cursor-pointer invisible opacity-0 duration-300"
+    class="scroll-top-button"
     type="button"
   >
     <span class="material-symbols-outlined"> arrow_upward </span>
