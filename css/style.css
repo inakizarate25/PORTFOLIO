@@ -12,9 +12,6 @@ html {
     padding: 0;
 
 }
-
-
-
 .ace{
   max-width: 1300px;
 }
@@ -233,26 +230,24 @@ li {
 
 
 
-  .scroll-top-button {
+  #scrollBtn {
+    display: none; /* Oculta el botón por defecto */
     position: fixed;
-    right: 20px;
-    bottom: 36px;
-    display: grid;
-    place-items: center;
-    width: 64px;
-    height: 64px;
-    border: 0;
-    border-radius: 50%;
-    background: #4285f4;
-    color: #f9f9f9;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #221eed;
+    color: white;
     cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.3s;
+    padding: 6px;
+    border-radius: 10px;
   }
 
-  .scroll-top-button.visible {
-    opacity: 1;
-    visibility: visible;
+  #scrollBtn:hover {
+    background-color: #777;
   }
-
+#scrollBtn img {
+  width: 35px;
+}

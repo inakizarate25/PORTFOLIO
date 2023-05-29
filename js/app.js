@@ -92,22 +92,23 @@ if (menuLinks.length > 0) {
 }
 
 
-
-// back to top button
-
-const scrollTopButton = document.querySelector("#scroll-top-button");
-
-
-const onScroll = (event) => {
-  const scrollPosition = event.target.scrollingElement.scrollTop;
-
-  scrollTopButton.classList.toggle("visible", scrollPosition > 0);
- 
+ // Muestra el botón de "scroll to top" cuando se hace scroll
+ window.onscroll = function() {
+  scrollFunction();
 };
 
-const scrollToTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
+function scrollFunction() {
+  var scrollBtn = document.getElementById("scrollBtn");
+  
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+}
 
-document.addEventListener("scroll", onScroll);
-
+// Realiza el scroll suave hacia arriba cuando se hace clic en el botón
+function scrollToTop() {
+  document.body.scrollTop = 0; // Para navegadores Safari
+  document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
+}
