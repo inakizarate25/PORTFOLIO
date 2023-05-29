@@ -112,3 +112,26 @@ function scrollToTop() {
   document.body.scrollTop = 0; // Para navegadores Safari
   document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE y Opera
 }
+
+
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando ...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_k76n8a6';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'ENVIAR';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'ENVIAR';
+      alert(JSON.stringify(err));
+    });
+});
