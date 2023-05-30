@@ -35,6 +35,7 @@ li {
     align-items: center;
     justify-content: space-between;
     min-height: 70px;
+    width: 99vw;
   }
   .header__logo {
     border-radius: 50%;
@@ -179,7 +180,7 @@ li {
       position: fixed;
       top: 0;
       left: -100%;
-      width: 100%;
+      width: 100vw;
       height:500px;
       background-color: rgba(0, 0, 0);
       padding: 100px 30px 30px 30px;
@@ -243,10 +244,6 @@ li {
     cursor: pointer;
     padding: 6px;
     border-radius: 10px;
-  }
-
-  #scrollBtn:hover {
-    background-color: #777;
   }
 #scrollBtn img {
   width: 35px;

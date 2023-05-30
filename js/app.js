@@ -121,7 +121,7 @@ document.getElementById('form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
 
-   btn.value = 'Enviando ...';
+   btn.value = 'Enviando...';
 
    const serviceID = 'default_service';
    const templateID = 'template_k76n8a6';
@@ -129,7 +129,20 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'ENVIAR';
-      alert('Sent!');
+      Toastify({
+        text: "Mensaje enviado",
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
+
     }, (err) => {
       btn.value = 'ENVIAR';
       alert(JSON.stringify(err));
