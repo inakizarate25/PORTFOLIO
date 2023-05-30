@@ -134,7 +134,7 @@ li {
 
   @media (max-width: 790px) {
     .menu__icon {
-      z-index: 5;
+      z-index: 10;
       display: block;
       position: relative;
       width: 30px;
@@ -178,12 +178,12 @@ li {
     }
     .menu__body {
       position: fixed;
-      top: 0;
+      top: 60px;
       left: -100%;
       width: 100vw;
-      height:500px;
+      height:450px;
       background-color: rgba(0, 0, 0);
-      padding: 100px 30px 30px 30px;
+      padding: 30px;
       transition: left 0.3s ease 0s;
       /* for scroll on menu */
       overflow: auto;
@@ -191,16 +191,6 @@ li {
     .menu__body._active {
       /* use left and not transform/translate because it scroll the .menu__body::before when u scroll menu */
       left: 0;
-    }
-    .menu__body::before {
-      content: '';
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      height: 70px;
-      background-color: #b2b79d;
-      z-index: 2;
     }
     .menu__list > li {
       flex-wrap: wrap;
