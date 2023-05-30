@@ -15,7 +15,7 @@ html {
 .ace{
   max-width: 1300px;
 }
-i{
+/* i{
   height: 100px;
 }
 
@@ -126,13 +126,13 @@ li {
       opacity: 0;
       visibility: hidden;
       /* to avoid mistaken hover */
-      pointer-events: none;
+      /* pointer-events: none;
       transition: all 0.3s ease 0s;
-    }
-  }
+    } */
+/*  */
 
 
-  @media (max-width: 790px) {
+  /* @media (max-width: 790px) {
     .menu__icon {
       z-index: 10;
       display: block;
@@ -185,11 +185,11 @@ li {
       background-color: rgba(0, 0, 0);
       padding: 30px;
       transition: left 0.3s ease 0s;
-      /* for scroll on menu */
+
       overflow: auto;
     }
     .menu__body._active {
-      /* use left and not transform/translate because it scroll the .menu__body::before when u scroll menu */
+  
       left: 0;
     }
     .menu__list > li {
@@ -216,7 +216,7 @@ li {
       font-size: 20px;
       color: #000;
     }
-  }
+  }  */
 
 
 
