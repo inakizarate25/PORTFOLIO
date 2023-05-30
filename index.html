@@ -354,15 +354,15 @@
 <form id="form">
   <div class="div-group flex flex-col gap-1">
     <label for="from_name" class="text-lg font-semibold">Nombre</label>
-    <input id="from_name" name="from_name" type="text" class="h-[40px] rounded bg-gray-300 text-gray-900 px-1">
+    <input id="from_name" name="from_name" type="text" class="h-[40px] rounded bg-gray-300 text-gray-900 px-1" required>
   </div>
   <div class="div-group flex flex-col gap-1">
     <label class="text-lg font-semibold" for="email_id">Email</label>
-    <input id="email_id" name="email_id" type="text" class="h-[40px] rounded bg-gray-300 text-gray-900 px-1">
+    <input id="email_id" name="email_id" type="text" class="h-[40px] rounded bg-gray-300 text-gray-900 px-1" required>
   </div>
   <div class="div-group flex flex-col gap-1">
     <label for="message" class="text-lg font-semibold">Mensaje</label>
-    <textarea class="bg-gray-300 text-gray-900 px-1 py-3" name="message" id="message" cols="30" rows="5"></textarea>
+    <textarea class="bg-gray-300 text-gray-900 px-1 py-3" name="message" id="message" cols="30" rows="5" required></textarea>
   </div>
   <input type="submit" id="button" value="ENVIAR" class="py-3 px-4 bg-blue-400 my-6 text-gray-100 font-semibold rounded hover:scale-105 hover:shadow-md cursor-pointer" >
 </form>
