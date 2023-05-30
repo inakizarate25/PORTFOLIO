@@ -177,8 +177,6 @@ li {
       transform: rotate(45deg) translate(0, 50%);
     }
     .menu__body {
-      position: fixed;
-      top: 0;
       left: -100%;
       width: 100vw;
       height:500px;
