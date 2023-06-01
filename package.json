@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "@emailjs/browser": "^3.11.0"
+    "flowbite": "^1.6.5"
   }
 }
