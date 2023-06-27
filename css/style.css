@@ -1,1 +1,2 @@
-:root{--prinsipal:#0000ff}html{scroll-behavior: smooth}*{margin: 0;padding: 0}.ace{max-width: 1300px}#scrollBtn{display: none;position: fixed;bottom: 20px;right: 30px;z-index: 99;border: none;outline: none;background-color: #221eed;color: white;cursor: pointer;padding: 6px;border-radius: 10px}#scrollBtn img{width: 35px}
+:root{--prinsipal:#0000ff}html{scroll-behavior: smooth}*{margin: 0;padding: 0;
+max-width: 100vw;}.ace{max-width: 1300px}#scrollBtn{display: none;position: fixed;bottom: 20px;right: 30px;z-index: 99;border: none;outline: none;background-color: #221eed;color: white;cursor: pointer;padding: 6px;border-radius: 10px}#scrollBtn img{width: 35px}
