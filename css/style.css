@@ -1,6 +1,353 @@
-:root{--prinsipal:#0000ff}html{scroll-behavior: smooth}*{margin: 0;padding: 0;
+/* :root{--prinsipal:#0000ff}html{scroll-behavior: smooth}*{margin: 0;padding: 0;
 max-width: 100vw;}.ace{max-width: 1300px}#scrollBtn{display: none;position: fixed;bottom: 80px;right: 30px;z-index: 99;border: none;outline: none;background-color: #221eed;color: white;cursor: pointer;padding: 6px;border-radius: 10px}#scrollBtn img{width: 35px}
 
 body{
     background-color: #ffffff;
+} */
+/* style.css */
+
+/* style.css */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Arial, sans-serif;
+
+  color: #111827; /* Tailwind text-gray-800 */
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+}
+button {
+  border: none;
+}
+/* Layout global */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+.header {
+  height: 10vh;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0.75rem;
+  align-items: center;
+  background-color: white;
+}
+
+.header img {
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    justify-content: space-around;
+  }
+}
+
+/* Botón contacto */
+.contacto-btn {
+  padding: 1rem 1.5rem;
+  background-color: #1e3a8a;
+  border-radius: 0.375rem;
+  color: #dbeafe;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contacto-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección Hero */
+#inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 90vh;
+  width: 100%;
+  padding: 3rem;
+  background: no-repeat center center url("../img/marca_4.svg");
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  #inicio {
+    background-image: url("../img/marca_3.svg");
+    padding: 18px;
+  }
+}
+
+/* Botón CV */
+.cv-container {
+  width: 100%;
+  height: 13rem;
+  background-color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv-btn {
+  padding: 0.75rem 1rem;
+  background-color: #1d4ed8;
+  border-radius: 0.375rem;
+  font-size: 1.25rem;
+  color: #f9fafb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cv-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Habilidades */
+#hab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  width: 100%;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  padding-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem 8rem;
+  }
+}
+
+.skills-grid img {
+  width: 100px;
+}
+
+/* Acerca de mí */
+#acerca {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.descripcion {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+#acerca h2 {
+  text-align: center;
+  font-size: 1.875rem;
+  color: #1f2937;
+}
+
+#acerca p {
+  text-align: left;
+  font-size: 1rem;
+  color: #1f2937;
+}
+
+@media (min-width: 768px) {
+  #acerca p {
+    font-size: 1.25rem;
+  }
+}
+
+/* Estudios */
+#estudios {
+  padding: 2.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  #estudios {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.estudios-box {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.estudios-box span {
+  font-size: 2rem;
+}
+
+.estudios-box p {
+  font-size: 1.25rem;
+}
+
+/* Proyectos */
+#proyectos {
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+#proyectos h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.proyectos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.proyecto-card {
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto-card h3 {
+  font-size: 1.5rem;
+  color: #1f2937;
+}
+
+.proyecto-card span {
+  font-size: 1.125rem;
+  color: #374151;
+}
+
+.proyecto-card a {
+  padding: 0.75rem 1rem;
+  background-color: #1d4ed8;
+  color: #f8fafc;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  transition: transform 0.2s ease;
+}
+
+.proyecto-card a:hover {
+  transform: scale(0.95);
+}
+
+/* Calendly */
+.calendly {
+  width: 100%;
+  padding: 2.5rem 0;
+  background-color: #e5e7eb;
+}
+
+/* Contacto */
+#contacto {
+  background-color: #e5e7eb;
+  padding: 2.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #contacto {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.contacto-redes {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto-redes i {
+  font-size: 2rem;
+  color: #1f2937;
+  transition: color 0.2s ease;
+}
+
+.contacto-redes i:hover {
+  color: #4b5563;
+}
+
+/* WhatsApp flotante */
+.wpp {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  height: 48px;
+  width: 48px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Scroll to top */
+#scrollBtn {
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  height: 48px;
+  width: 48px;
+  background-color: #1d4ed8;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#scrollBtn:hover {
+  transform: scale(1.05);
 }
